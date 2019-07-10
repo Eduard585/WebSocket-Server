@@ -1,0 +1,14 @@
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\bin\Debug\netcoreapp2.1\DemoServer.deps.json
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\bin\Debug\netcoreapp2.1\DemoServer.runtimeconfig.json
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\bin\Debug\netcoreapp2.1\DemoServer.runtimeconfig.dev.json
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\bin\Debug\netcoreapp2.1\DemoServer.dll
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\bin\Debug\netcoreapp2.1\DemoServer.pdb
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\bin\Debug\netcoreapp2.1\WebSocket-Server.dll
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\bin\Debug\netcoreapp2.1\WebSocket-Server.pdb
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\obj\Debug\netcoreapp2.1\DemoServer.csprojAssemblyReference.cache
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\obj\Debug\netcoreapp2.1\DemoServer.csproj.CoreCompileInputs.cache
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\obj\Debug\netcoreapp2.1\DemoServer.AssemblyInfoInputs.cache
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\obj\Debug\netcoreapp2.1\DemoServer.AssemblyInfo.cs
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\obj\Debug\netcoreapp2.1\DemoServer.csproj.CopyComplete
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\obj\Debug\netcoreapp2.1\DemoServer.dll
+C:\Users\Semenkin.E\Documents\Visual Studio 2017\Projects\WebSocket-Server\DemoServer\obj\Debug\netcoreapp2.1\DemoServer.pdb

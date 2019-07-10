@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    var wsUri = "ws://localhost:80/";
+    var count = 1000;
+    var wsList = [];
+
+    function init()
+    {        
+        testWebSocket();
+    }
+
+    function testWebSocket() {
+        
+        for (var i = 0; i < count; i++) {
+            var ws = new WebSocket(wsUri);
+            wsList[i] = ws;
+            if (length > 50) break;
+        }
+
+        set();
+        
+
+    }
+
+    function set() {
+        setTimeout(sendMessage(), 2000);
+    }
+
+    function sendMessage() {
+        for (var i = 0; i < count; i++) {
+            if (wsList[i].readyState  == 1) {
+                wsList[i].send("Hi im "+i);
+            }
+        } 
+    }
+
+    init();
+</script>

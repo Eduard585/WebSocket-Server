@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>WebSocket Test</title>
+<script language="javascript" type="text/javascript">
+
+    var wsUri = "ws://localhost:80/";
+    var output;
+
+    var all = 0;
+    var count = 0;
+    var avg = 0;
+
+  function init()
+  {
+    output = document.getElementById("output");
+    testWebSocket();
+  }
+
+  function testWebSocket()
+  {
+    websocket = new WebSocket(wsUri);
+    websocket.onopen = function(evt) { onOpen(evt) };
+    websocket.onclose = function(evt) { onClose(evt) };
+    websocket.onmessage = function(evt) { onMessage(evt) };
+    websocket.onerror = function (evt) { onError(evt) };
+  }
+
+    function closeConnection() {
+        websocket.close();
+    }
+
+  function onOpen(evt)
+  {
+    writeToScreen("CONNECTED");
+    doSend("WebSocket rocks");
+  }
+
+  function onClose(evt)
+  {
+    writeToScreen("DISCONNECTED");
+  }
+
+    function onMessage(evt) {
+        var newTime = new Date().getTime();
+        avg += newTime - all;
+      count++;
+    writeToScreen('<span style="color: blue;">RESPONSE: ' + evt.data+'</span>');
+   
+  }
+
+  function onError(evt)
+  {
+    writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+  }
+
+  function doSend(message)
+  {
+    writeToScreen("SENT: " + message);
+    ssend(message);
+  }
+
+  function writeToScreen(message)
+  {
+    var pre = document.createElement("p");
+    pre.style.wordWrap = "break-word";
+    pre.innerHTML = message;
+    output.appendChild(pre);
+    }
+
+    function sendMore() {       
+        ssend("More rocks");
+    }
+
+    function averageResponse() {
+        console.log(avg / count);
+    }
+
+    function ssend(message) {
+        all = new Date().getTime();
+        websocket.send(message);
+    }
+
+  window.addEventListener("load", init, false);
+
+  </script>
+
+<h2>WebSocket Test</h2>
+<input value="Send more" onclick="sendMore()" type="button">
+<input value="Close connection" onclick="closeConnection()" type="button">
+<input value="Фverage response time" onclick="averageResponse()" type="button">
+<div id="output"></div>
